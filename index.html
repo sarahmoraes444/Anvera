@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANVERA — A sua essência traduzida em fragrância</title>
+<meta name="description" content="Anvera une psicologia, análise comportamental, perfumaria e mixologia para criar uma fragrância exclusiva a partir de quem você é.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">ANVERA</a>
+    <nav class="main-nav">
+      <a href="#inicio">Início</a>
+      <a href="#descubra">Descubra sua essência</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#seu-perfume">Seu perfume</a>
+      <a href="#refis">Refis</a>
+      <a href="#sobre">Sobre a Anvera</a>
+      <a href="https://forms.gle/REPLACE-COM-SEU-LINK-DO-FORMULARIO" target="_blank" rel="noopener noreferrer">Trabalhe conosco</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Pesquisar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      </button>
+      <button class="icon-btn" id="accountBtn" aria-label="Minha conta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      </button>
+      <button class="icon-btn cart-icon-btn" id="cartBtn" aria-label="Abrir carrinho">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 6h2l2.4 11.2a1.5 1.5 0 001.5 1.2h8.4a1.5 1.5 0 001.5-1.2L21 9H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-badge" id="cartBadge" hidden>0</span>
+      </button>
+      <a href="#descubra" class="btn btn-primary header-cta">Descobrir minha essência</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio">Início</a>
+    <a href="#descubra">Descubra sua essência</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#seu-perfume">Seu perfume</a>
+    <a href="#refis">Refis</a>
+    <a href="#sobre">Sobre a Anvera</a>
+    <a href="https://forms.gle/REPLACE-COM-SEU-LINK-DO-FORMULARIO" target="_blank" rel="noopener noreferrer">Trabalhe conosco</a>
+    <a href="#descubra" class="btn btn-primary btn-block">Descobrir minha essência</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow">Perfumaria personalizada Anvera</div>
+      <h1>Você é único. Seu perfume também será.</h1>
+      <p class="sub">Descubra como sua personalidade e suas emoções podem ser traduzidas em uma fragrância criada exclusivamente para você.</p>
+      <div class="hero-actions">
+        <a href="#descubra" class="btn btn-primary">Descobrir minha essência</a>
+        <a href="#sobre" class="btn btn-outline">Conheça a Anvera</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 420 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bottleGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3a5686"/>
+            <stop offset="100%" stop-color="#1c2f4d"/>
+          </linearGradient>
+        </defs>
+        <line x1="210" y1="60" x2="210" y2="160" stroke="#c3cbdb" stroke-width="1" stroke-dasharray="2 5" class="molecule"/>
+        <line x1="210" y1="60" x2="120" y2="150" stroke="#c3cbdb" stroke-width="1" stroke-dasharray="2 5" class="molecule"/>
+        <line x1="210" y1="60" x2="300" y2="150" stroke="#c3cbdb" stroke-width="1" stroke-dasharray="2 5" class="molecule"/>
+        <circle cx="210" cy="60" r="5" fill="#2b4571" class="molecule" style="animation-delay:.2s"/>
+        <circle cx="120" cy="150" r="4" fill="#6c81a3" class="molecule" style="animation-delay:.6s"/>
+        <circle cx="300" cy="150" r="4" fill="#6c81a3" class="molecule" style="animation-delay:1s"/>
+        <rect x="150" y="175" width="120" height="16" rx="3" fill="#a79f8f"/>
+        <rect x="163" y="150" width="94" height="30" rx="4" fill="#8a96ac"/>
+        <path d="M150 191 L150 480 Q150 500 172 500 L248 500 Q270 500 270 480 L270 191 Z" fill="url(#bottleGrad)"/>
+        <rect x="150" y="330" width="120" height="60" fill="#f8f6f1" opacity=".92"/>
+        <text x="210" y="358" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="17" fill="#2b4571">ANVERA</text>
+        <text x="210" y="376" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" letter-spacing="2" fill="#6c81a3">ESSÊNCIA EXCLUSIVA</text>
+      </svg>
+      <span class="floating-tag tag-1">Personalidade</span>
+      <span class="floating-tag tag-2">Notas olfativas</span>
+      <span class="floating-tag tag-3">Emoções</span>
+      <span class="floating-tag tag-4">Mapa comportamental</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMA ================= -->
+<section class="section problem">
+  <div class="container problem-grid">
+    <div class="bottle-field">
+      <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="18" y="60" width="34" height="90" fill="#dcd3c0"/>
+        <rect x="70" y="40" width="34" height="110" fill="#dcd3c0"/>
+        <rect x="230" y="50" width="34" height="100" fill="#dcd3c0"/>
+        <rect x="270" y="70" width="34" height="80" fill="#dcd3c0"/>
+        <rect x="18" y="180" width="34" height="14" fill="#c3bda8"/>
+        <rect x="70" y="180" width="34" height="14" fill="#c3bda8"/>
+        <rect x="230" y="180" width="34" height="14" fill="#c3bda8"/>
+        <rect x="270" y="180" width="34" height="14" fill="#c3bda8"/>
+        <circle cx="160" cy="140" r="58" fill="none" stroke="#2b4571" stroke-width="1" stroke-dasharray="3 5"/>
+        <rect x="140" y="105" width="40" height="60" rx="4" fill="none" stroke="#2b4571" stroke-width="1.4"/>
+        <text x="160" y="230" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="13" fill="#2b4571">o espaço que falta</text>
+      </svg>
+    </div>
+    <div>
+      <div class="sec-kicker">O problema</div>
+      <h2>E se o perfume que você procura ainda não existir?</h2>
+      <p style="margin-top:22px;font-size:16.5px;color:#4d5567;line-height:1.8;max-width:520px;">Encontrar uma fragrância que realmente represente quem você é pode ser difícil. Em um mercado repleto de perfumes genéricos e produzidos em massa, sua individualidade acaba ficando de lado.</p>
+      <p class="problem-closer">Foi para transformar essa busca que nasceu a Anvera.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOLUÇÃO ================= -->
+<section class="section" id="solucao">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-kicker">A solução</div>
+      <h2>Nós traduzimos a sua mente em fragrância.</h2>
+      <p>A Anvera une análise individual, psicologia e perfumaria para criar uma essência que só existe porque você existe.</p>
+    </div>
+    <div class="solution-cols">
+      <div class="solution-col">
+        <div class="num">Psicólogos e analistas</div>
+        <h3>Compreendem quem você é</h3>
+        <p>Mapeiam características individuais, personalidade e emoções através de um processo conduzido com cuidado e escuta.</p>
+      </div>
+      <div class="solution-col">
+        <div class="num">Especialistas em perfumaria</div>
+        <h3>Traduzem em notas olfativas</h3>
+        <p>Transformam essas informações em uma composição olfativa coerente com o seu perfil comportamental.</p>
+      </div>
+      <div class="solution-col">
+        <div class="num">Mixologistas</div>
+        <h3>Criam a fragrância final</h3>
+        <p>Desenvolvem artesanalmente a essência exclusiva, ajustando equilíbrio, projeção e qualidade olfativa.</p>
+      </div>
+    </div>
+    <div class="flow-strip">
+      <span>Personalidade</span><span class="arrow">→</span><span>Emoções</span><span class="arrow">→</span><span>Mapeamento</span><span class="arrow">→</span><span>Tradução olfativa</span><span class="arrow">→</span><span>Fragrância exclusiva</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JORNADA / COMO FUNCIONA ================= -->
+<section class="section journey" id="como-funciona">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-kicker">A experiência Anvera</div>
+      <h2>Sua jornada começa em você.</h2>
+      <p>Cinco etapas conduzem sua personalidade até um frasco que carrega sua fórmula, e só a sua.</p>
+    </div>
+    <div class="journey-steps">
+      <div class="j-step">
+        <div class="j-num">01</div>
+        <div>
+          <h3>Entrevista imersiva</h3>
+          <p>Nossos analistas qualificados conduzem um diálogo profundo para explorar sua personalidade e emoções através de questões.</p>
+        </div>
+        <div class="j-visual">conversa &amp; escuta ativa</div>
+      </div>
+      <div class="j-step">
+        <div class="j-num">02</div>
+        <div>
+          <h3>Mapeamento e diagnóstico</h3>
+          <p>A partir das suas respostas, utilizamos ferramentas de análise para traçar seu perfil comportamental.</p>
+        </div>
+        <div class="j-visual">gráficos &amp; conexões de perfil</div>
+      </div>
+      <div class="j-step">
+        <div class="j-num">03</div>
+        <div>
+          <h3>Tradução olfativa</h3>
+          <p>Psicólogos olfativos traduzem os dados da sua personalidade em essências específicas.</p>
+        </div>
+        <div class="j-visual">
+          <div class="j-note-map">
+            <div class="pair"><b>Lavanda</b> → Calma</div>
+            <div class="pair"><b>Cítrico</b> → Energia</div>
+          </div>
+        </div>
+      </div>
+      <div class="j-step">
+        <div class="j-num">04</div>
+        <div>
+          <h3>Criação e mixologia</h3>
+          <p>O perfume é criado artesanalmente e com precisão por mixologistas, que misturam as essências selecionadas para compor sua fragrância exclusiva.</p>
+        </div>
+        <div class="j-visual">frasco, pipetas &amp; essências</div>
+      </div>
+      <div class="j-step">
+        <div class="j-num">05</div>
+        <div>
+          <h3>Entrega</h3>
+          <p>Você recebe seu perfume personalizado em uma embalagem exclusiva Anvera, refletindo sua verdadeira essência individual.</p>
+        </div>
+        <div class="j-visual">embalagem exclusiva Anvera</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIZ / DESCOBERTA ================= -->
+<section class="section" id="descubra">
+  <div class="container">
+    <div class="quiz-shell" id="quizShell">
+
+      <!-- Consentimento + intro -->
+      <div id="quizIntro">
+        <div class="quiz-intro">
+          <div class="sec-kicker">Descubra sua essência</div>
+          <h2>Responda algumas perguntas sobre você.</h2>
+          <p>Suas respostas nos ajudam a compreender seu perfil e identificar caminhos olfativos que combinam com sua personalidade. Não é um teste com respostas certas — é uma conversa com dez perguntas.</p>
+        </div>
+        <div class="consent-block">
+          <p class="consent-note">Para criar uma experiência personalizada, precisamos analisar suas respostas e preferências. Seus dados serão utilizados exclusivamente de acordo com nossa <a href="#privacidade" style="text-decoration:underline;color:var(--blue);">Política de Privacidade</a>.</p>
+          <label class="consent-row">
+            <input type="checkbox" id="consentRequired">
+            <span>Concordo com o tratamento dos meus dados para realização da experiência personalizada.</span>
+          </label>
+          <label class="consent-row">
+            <input type="checkbox" id="consentOptional">
+            <span>Quero receber novidades e ofertas da Anvera por e-mail.</span>
+          </label>
+          <button class="btn btn-primary btn-block" id="startQuizBtn" disabled>Começar</button>
+        </div>
+      </div>
+
+      <!-- Perguntas -->
+      <div id="quizQuestions" style="display:none;">
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress-label">
+            <span id="qLabel">Pergunta 1 de 10</span>
+            <span>Descoberta em andamento</span>
+          </div>
+          <div class="quiz-progress-bar"><i id="qProgressFill"></i></div>
+        </div>
+        <div class="quiz-question">
+          <h3 id="qText"></h3>
+          <div class="quiz-options" id="qOptions"></div>
+        </div>
+        <div class="quiz-nav">
+          <button class="btn-quiet" id="qBackBtn">Voltar</button>
+          <span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Resultado -->
+    <div class="result-panel mt-lg" id="resultPanel">
+      <div class="result-top">
+        <div class="sec-kicker">Sua essência</div>
+        <h2 class="result-profile" id="resultProfileName">—</h2>
+        <div class="result-traits" id="resultTraits"></div>
+      </div>
+      <div class="result-grid">
+        <div>
+          <div class="result-family" id="resultFamily">—</div>
+          <p class="result-just" id="resultJustification"></p>
+          <p style="margin-top:24px;font-size:12px;color:#8a91a1;font-style:italic;font-family:var(--serif);">O resultado apresentado tem finalidade de personalização da experiência olfativa e não constitui diagnóstico psicológico ou médico.</p>
+        </div>
+        <div class="pyramid">
+          <div class="pyramid-tier"><div class="tier-label">SAÍDA</div><div class="tier-note" id="resultTop"></div></div>
+          <div class="pyramid-tier"><div class="tier-label">CORAÇÃO</div><div class="tier-note" id="resultHeart"></div></div>
+          <div class="pyramid-tier"><div class="tier-label">FUNDO</div><div class="tier-note" id="resultBase"></div></div>
+        </div>
+      </div>
+      <div class="result-actions">
+        <a href="#seu-perfume" class="btn btn-primary" id="goCustomizeBtn">Criar minha fragrância</a>
+        <button class="btn btn-outline" id="retakeBtn">Refazer análise</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CUSTOMIZADOR ================= -->
+<section class="section customizer" id="seu-perfume">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-kicker">Seu perfume</div>
+      <h2>Agora, vamos transformar sua essência em perfume.</h2>
+      <p>Ajuste a família olfativa, as notas e a intensidade. O frasco à direita se atualiza em tempo real conforme suas escolhas.</p>
+    </div>
+
+    <div class="custom-grid">
+      <!-- ESQUERDA: configurações -->
+      <div>
+        <div class="custom-block">
+          <label class="block-title">Família olfativa</label>
+          <div class="chip-row" id="familyChips"></div>
+        </div>
+
+        <div class="custom-block">
+          <label class="block-title">Notas</label>
+          <div class="chip-row" id="notesChips"></div>
+        </div>
+
+        <div class="custom-block">
+          <label class="block-title">Personalização</label>
+          <div class="slider-row">
+            <div class="slider-labels"><span class="name">Intensidade</span><span>Suave — Intensa</span></div>
+            <input type="range" min="0" max="100" value="55" id="sliderIntensity">
+          </div>
+          <div class="slider-row">
+            <div class="slider-labels"><span class="name">Frescor</span><span>Baixo — Alto</span></div>
+            <input type="range" min="0" max="100" value="50" id="sliderFreshness">
+          </div>
+          <div class="slider-row">
+            <div class="slider-labels"><span class="name">Doçura</span><span>Baixa — Alta</span></div>
+            <input type="range" min="0" max="100" value="35" id="sliderSweetness">
+          </div>
+          <div class="slider-row">
+            <div class="slider-labels"><span class="name">Projeção</span><span>Discreta — Marcante</span></div>
+            <input type="range" min="0" max="100" value="60" id="sliderProjection">
+          </div>
+          <p class="tech-note">Nossa equipe poderá ajustar tecnicamente a fórmula para garantir equilíbrio e qualidade olfativa.</p>
+        </div>
+
+        <div class="custom-block">
+          <label class="block-title">Frasco</label>
+          <div class="chip-row" id="bottleChips">
+            <button class="chip active" data-bottle="A">Modelo A</button>
+            <button class="chip" data-bottle="B">Modelo B</button>
+            <button class="chip" data-bottle="C">Modelo C</button>
+          </div>
+        </div>
+
+        <div class="custom-block">
+          <label class="block-title">Tampa</label>
+          <div class="chip-row" id="capChips">
+            <button class="chip active" data-cap="minimalista">Minimalista</button>
+            <button class="chip" data-cap="metalica">Metálica</button>
+            <button class="chip" data-cap="premium">Premium</button>
+          </div>
+        </div>
+
+        <div class="custom-block">
+          <label class="block-title">Dê um nome à sua essência</label>
+          <input type="text" class="name-field" id="fragranceName" placeholder="Essence 01" maxlength="30">
+        </div>
+
+        <a href="#final-resultado" class="btn btn-primary btn-block" id="finalizeBtn">Finalizar minha criação</a>
+      </div>
+
+      <!-- DIREITA: preview -->
+      <div class="custom-preview">
+        <div class="bottle-stage">
+          <svg viewBox="0 0 320 460" id="bottleSvg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="liquidGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop id="liquidStop1" offset="0%" stop-color="#8FA398"/>
+                <stop id="liquidStop2" offset="100%" stop-color="#2b4571"/>
+              </linearGradient>
+            </defs>
+            <!-- cap -->
+            <g id="capGroup">
+              <rect x="128" y="46" width="64" height="26" rx="3" fill="#2b4571" id="capBody"/>
+            </g>
+            <!-- neck -->
+            <rect x="140" y="72" width="40" height="24" fill="#dfe4ee"/>
+            <!-- body -->
+            <path id="bottleBody" d="M110 96 L210 96 Q222 96 222 112 L222 400 Q222 424 198 424 L122 424 Q98 424 98 400 L98 112 Q98 96 110 96 Z" fill="url(#liquidGrad)" stroke="#1c2f4d" stroke-width="1"/>
+            <!-- label -->
+            <rect x="112" y="220" width="96" height="70" fill="#f8f6f1" opacity="0.94"/>
+            <text x="160" y="248" text-anchor="middle" font-family="Manrope, sans-serif" font-size="8.5" letter-spacing="2" fill="#6c81a3">ANVERA</text>
+            <text x="160" y="272" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="15" fill="#2b4571" id="labelName">Essence 01</text>
+            <!-- particles -->
+            <g id="particleGroup"></g>
+          </svg>
+        </div>
+        <div class="preview-caption">
+          <div class="fname" id="previewName">Essence 01</div>
+          <div class="fmeta" id="previewMeta">Amadeirada · Intensidade 55% · Projeção 60%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTADO FINAL ================= -->
+<section class="section final-panel" id="final-resultado">
+  <div class="container">
+    <div class="final-card">
+      <span class="tag">Fórmula exclusiva Anvera</span>
+      <h2 class="final-name" id="finalName">Sua essência ganhou forma.</h2>
+      <p style="margin-top:14px;color:#4d5567;font-size:15px;">Sua fórmula foi registrada e permanece salva de forma vitalícia na sua conta Anvera.</p>
+      <div class="final-specs">
+        <div class="final-spec"><div class="k">PERFIL</div><div class="v" id="fsProfile">—</div></div>
+        <div class="final-spec"><div class="k">FAMÍLIA</div><div class="v" id="fsFamily">—</div></div>
+        <div class="final-spec"><div class="k">NOTAS</div><div class="v" id="fsNotes">—</div></div>
+        <div class="final-spec"><div class="k">INTENSIDADE</div><div class="v" id="fsIntensity">—</div></div>
+        <div class="final-spec"><div class="k">PROJEÇÃO</div><div class="v" id="fsProjection">—</div></div>
+        <div class="final-spec"><div class="k">FRASCO</div><div class="v" id="fsBottle">—</div></div>
+        <div class="final-spec"><div class="k">PREÇO</div><div class="v" id="fsPrice">R$ 489,00</div></div>
+      </div>
+      <div class="add-cart-row">
+        <button class="btn btn-primary" id="addPerfumeToCartBtn">Adicionar ao carrinho</button>
+        <a href="#refis" class="btn btn-outline">Ir para minha conta</a>
+      </div>
+      <div class="added-flash" id="perfumeAddedFlash">Adicionado ao carrinho.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODELO DE NEGÓCIO ================= -->
+<section class="section section-tight" id="modelo">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-kicker">Como funciona depois</div>
+      <h2>Sua fórmula não termina com o primeiro frasco.</h2>
+      <p>O cliente investe inicialmente na experiência de consultoria e no frasco personalizado. Quando o perfume acabar, sua fórmula exclusiva permanece registrada e ele poderá adquirir apenas o refil.</p>
+    </div>
+    <div class="model-grid">
+      <div class="model-card">
+        <div class="k">PRIMEIRA EXPERIÊNCIA</div>
+        <h3>Consultoria + Frasco + Fórmula</h3>
+        <p>Entrevista, diagnóstico, tradução olfativa e criação artesanal do seu primeiro frasco exclusivo.</p>
+      </div>
+      <div class="model-arrow">→</div>
+      <div class="model-card">
+        <div class="k">PRÓXIMOS PEDIDOS</div>
+        <h3>Refil da sua fórmula</h3>
+        <p>Sempre que quiser, solicite o refil sem refazer a entrevista — sua fórmula já está com a gente.</p>
+      </div>
+    </div>
+    <p class="model-highlight">Sua fórmula exclusiva permanece salva de forma vitalícia.</p>
+  </div>
+</section>
+
+<!-- ================= REFIL ================= -->
+<section class="section refill" id="refis">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-kicker">Minha essência</div>
+      <h2>Sua essência continua.</h2>
+      <p>Sem precisar refazer todo o processo, você acessa sua fórmula sempre que quiser mais.</p>
+    </div>
+    <div class="refill-card">
+      <div class="refill-row"><span class="k">Nome da fragrância</span><span class="v">Midnight Blue</span></div>
+      <div class="refill-row"><span class="k">Código da fórmula</span><span class="v">AV-7734-BR</span></div>
+      <div class="refill-row"><span class="k">Data da criação</span><span class="v">12 de março de 2026</span></div>
+      <div class="refill-row"><span class="k">Notas utilizadas</span><span class="v">Alecrim, Lavanda, Cedro</span></div>
+      <div class="refill-row"><span class="k">Último pedido</span><span class="v">04 de julho de 2026</span></div>
+      <div class="refill-row"><span class="k">Preço do refil</span><span class="v">R$ 259,00</span></div>
+      <button class="btn btn-primary btn-block" id="addRefillToCartBtn">Solicitar meu refil</button>
+      <div class="added-flash" id="refillAddedFlash" style="display:block;text-align:center;margin-top:12px;">Refil adicionado ao carrinho.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUSTENTABILIDADE ================= -->
+<section class="section section-tight" id="sustentabilidade">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-kicker">Compromisso</div>
+      <h2>Sua essência também cuida do futuro.</h2>
+      <p>A Anvera integra a logística reversa às suas unidades, contribuindo para o ciclo de vida responsável das embalagens após o consumo.</p>
+    </div>
+    <div class="cycle">
+      <div class="cycle-node"><div class="cycle-dot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="8" width="12" height="12" rx="1"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+      </div><span>Produção</span></div>
+      <div class="cycle-connector"></div>
+      <div class="cycle-node"><div class="cycle-dot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+      </div><span>Consumo</span></div>
+      <div class="cycle-connector"></div>
+      <div class="cycle-node"><div class="cycle-dot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12a8 8 0 0114-5"/><path d="M20 12a8 8 0 01-14 5"/><path d="M14 3l4 4-4 4M10 21l-4-4 4-4"/></svg>
+      </div><span>Devolução</span></div>
+      <div class="cycle-connector"></div>
+      <div class="cycle-node"><div class="cycle-dot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4v6h6M20 20v-6h-6"/><path d="M20 10a8 8 0 00-15-3M4 14a8 8 0 0015 3"/></svg>
+      </div><span>Reciclagem</span></div>
+      <div class="cycle-connector"></div>
+      <div class="cycle-node"><div class="cycle-dot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5"/></svg>
+      </div><span>Novo ciclo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VALORES ================= -->
+<section class="section section-tight" id="valores">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-kicker">O que nos guia</div>
+      <h2>Cinco princípios, uma fórmula.</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card"><h4>Individualidade</h4><p>Cada pessoa possui uma essência única.</p></div>
+      <div class="value-card"><h4>Inovação</h4><p>Tecnologia, psicologia e perfumaria trabalhando juntas.</p></div>
+      <div class="value-card"><h4>Exclusividade</h4><p>Uma fragrância criada especialmente para cada cliente.</p></div>
+      <div class="value-card"><h4>Autenticidade</h4><p>O perfume como expressão da identidade individual.</p></div>
+      <div class="value-card"><h4>Sustentabilidade</h4><p>Responsabilidade com o ciclo de vida das embalagens.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="section" id="sobre">
+  <div class="container about">
+    <div>
+      <div class="sec-kicker">Sobre a Anvera</div>
+      <h2>Muito além de um perfume.</h2>
+      <p style="margin-top:22px;font-size:16px;color:#4d5567;line-height:1.8;">A Anvera nasceu com o propósito de proporcionar exclusividade e personalização por meio do autoconhecimento, valorizando a individualidade e criando experiências únicas e significativas.</p>
+      <div class="about-pillars">
+        <span class="pillar">Psicologia</span>
+        <span class="pillar">Perfumaria</span>
+        <span class="pillar">Tecnologia</span>
+        <span class="pillar">Individualidade</span>
+      </div>
+    </div>
+    <div class="bottle-field">
+      <svg viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="160" cy="160" r="100" fill="none" stroke="#dcd3c0" stroke-width="1"/>
+        <circle cx="160" cy="90" r="34" fill="none" stroke="#2b4571" stroke-width="1"/>
+        <text x="160" y="94" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="11" fill="#2b4571">Psicologia</text>
+        <circle cx="230" cy="160" r="34" fill="none" stroke="#2b4571" stroke-width="1"/>
+        <text x="230" y="164" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="11" fill="#2b4571">Perfumaria</text>
+        <circle cx="160" cy="230" r="34" fill="none" stroke="#2b4571" stroke-width="1"/>
+        <text x="160" y="234" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="10.5" fill="#2b4571">Tecnologia</text>
+        <circle cx="90" cy="160" r="34" fill="none" stroke="#2b4571" stroke-width="1"/>
+        <text x="90" y="164" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="9.5" fill="#2b4571">Individualidade</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="section final-cta">
+  <div class="container">
+    <h2>Na Anvera, acreditamos que você é único.</h2>
+    <p class="lead">E agora, o seu perfume também será.</p>
+    <a href="#descubra" class="btn btn-primary">Descobrir minha essência</a>
+    <p class="tagline">A sua essência traduzida em fragrância.</p>
+  </div>
+</section>
+
+<!-- ================= PRIVACIDADE / LGPD ================= -->
+<section class="section section-tight" id="privacidade">
+  <div class="container privacy-block">
+    <div class="sec-head center">
+      <div class="sec-kicker">Privacidade e proteção de dados</div>
+      <h2>A Anvera conhece sua essência, mas somente você controla seus dados.</h2>
+      <p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD), explicamos aqui como tratamos suas informações.</p>
+    </div>
+    <div class="privacy-item">
+      <h4>Quais dados coletamos</h4>
+      <p>Dados de cadastro (nome, e-mail, contato), respostas da entrevista de personalidade e preferências de personalização do seu perfume.</p>
+    </div>
+    <div class="privacy-item">
+      <h4>Por que coletamos</h4>
+      <p>Exclusivamente para conduzir sua análise de perfil e traduzir suas respostas em uma fórmula olfativa individual.</p>
+    </div>
+    <div class="privacy-item">
+      <h4>Como usamos</h4>
+      <p>Suas respostas são utilizadas por analistas e especialistas em perfumaria envolvidos na criação da sua fragrância — nunca para fins alheios a essa finalidade sem o seu consentimento.</p>
+    </div>
+    <div class="privacy-item">
+      <h4>Onde e por quanto tempo ficam armazenados</h4>
+      <p>Seus dados e sua fórmula ficam armazenados em ambiente controlado enquanto sua conta estiver ativa, permitindo solicitar refis sem repetir o processo.</p>
+    </div>
+    <div class="privacy-item">
+      <h4>Com quem podem ser compartilhados</h4>
+      <p>Apenas com os profissionais Anvera diretamente envolvidos no seu atendimento (consultoria, análise e produção), conforme o estritamente necessário para cada etapa.</p>
+    </div>
+    <div class="privacy-item">
+      <h4>Seus direitos</h4>
+      <p>Você pode solicitar a qualquer momento informações sobre seus dados, correção, portabilidade ou exclusão, através da área "Meus dados" ou pelo nosso canal de contato de privacidade.</p>
+    </div>
+    <p class="privacy-disclaimer-note">Esta página descreve o compromisso de privacidade da Anvera em linguagem simples. Este site é uma demonstração de produto digital; a implementação técnica de segurança (criptografia, autenticação, controle de acesso em servidor) deve ser realizada na camada de backend antes de qualquer operação com dados reais.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">ANVERA</div>
+        <p>A sua essência traduzida em fragrância.</p>
+        <div class="trust-line" style="margin-top:18px;font-size:12.5px;color:#7c8394;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="1"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          Seus dados são utilizados apenas para proporcionar sua experiência personalizada.
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>ANVERA</h5>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#refis">Refis</a>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <a href="#privacidade">Privacidade</a>
+        <a href="#privacidade">Política de Cookies</a>
+        <a href="#privacidade">Termos de Uso</a>
+      </div>
+      <div class="footer-col">
+        <h5>Suporte</h5>
+        <a href="#privacidade">Segurança</a>
+        <a href="#">Contato</a>
+        <a href="#privacidade">Meus dados</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© ANVERA Comércio e Perfumaria Ltda.</span>
+      <span>Site conceitual — demonstração de produto digital.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= PESQUISA ================= -->
+<div class="modal-overlay" id="searchOverlay">
+  <div class="modal-box wide">
+    <div class="modal-head">
+      <h3>Pesquisar</h3>
+      <button class="modal-close" id="searchCloseBtn" aria-label="Fechar pesquisa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
+    </div>
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      <input type="text" id="searchInput" placeholder="Busque por “refil”, “quiz”, “privacidade”…" autocomplete="off">
+    </div>
+    <div class="search-results" id="searchResults">
+      <p class="search-hint">Digite para buscar em todo o site.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTA ================= -->
+<div class="modal-overlay" id="accountOverlay">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="accountModalTitle">Minha conta</h3>
+      <button class="modal-close" id="accountCloseBtn" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
+    </div>
+
+    <!-- visitante -->
+    <div id="accountGuestView">
+      <div class="account-tabs">
+        <button class="account-tab active" data-tab="login">Entrar</button>
+        <button class="account-tab" data-tab="register">Criar conta</button>
+      </div>
+
+      <form class="account-form active" id="loginForm">
+        <div>
+          <label class="field-label" for="loginEmail">E-mail</label>
+          <input type="email" id="loginEmail" class="name-field" required placeholder="voce@email.com">
+        </div>
+        <div>
+          <label class="field-label" for="loginPassword">Senha</label>
+          <input type="password" id="loginPassword" class="name-field" required minlength="6" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+      </form>
+
+      <form class="account-form" id="registerForm">
+        <div>
+          <label class="field-label" for="regName">Nome</label>
+          <input type="text" id="regName" class="name-field" required placeholder="Seu nome">
+        </div>
+        <div>
+          <label class="field-label" for="regEmail">E-mail</label>
+          <input type="email" id="regEmail" class="name-field" required placeholder="voce@email.com">
+        </div>
+        <div>
+          <label class="field-label" for="regPassword">Senha</label>
+          <input type="password" id="regPassword" class="name-field" required minlength="6" placeholder="Mínimo de 6 caracteres">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Criar minha conta</button>
+      </form>
+    </div>
+
+    <!-- logado -->
+    <div class="account-panel" id="accountLoggedView">
+      <div class="account-avatar" id="accountAvatar">A</div>
+      <div class="a-name" id="accountName">—</div>
+      <div class="a-email" id="accountEmail">—</div>
+      <div class="account-links">
+        <a href="#refis" id="accountEssenceLink">Minha essência</a>
+        <a href="#privacidade">Meus dados</a>
+        <button type="button" class="link-row" id="logoutBtn">Sair da conta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CARRINHO ================= -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+  <div class="cart-head">
+    <h3>Seu carrinho</h3>
+    <button class="cart-close" id="cartCloseBtn" aria-label="Fechar carrinho">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cartItemsWrap">
+    <div class="cart-empty">Seu carrinho está vazio.<br>Descubra sua essência para começar.</div>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-subtotal"><span>Subtotal</span><span class="v" id="cartSubtotal">R$ 0,00</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Finalizar compra</button>
+    <p class="cart-note">Frascos e refis são fabricados sob encomenda a partir da sua fórmula exclusiva.</p>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
