@@ -9,11 +9,29 @@
   /* ---------------- Mobile menu ---------------- */
   const hamburger = document.getElementById("hamburgerBtn");
   const mobileMenu = document.getElementById("mobileMenu");
+
+  function openMobileMenu() {
+    closeAllPanels();
+    mobileMenu.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true");
+    hamburger.setAttribute("aria-label", "Fechar menu");
+    document.body.classList.add("no-scroll");
+  }
+  function closeMobileMenu() {
+    mobileMenu.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false");
+    hamburger.setAttribute("aria-label", "Abrir menu");
+    document.body.classList.remove("no-scroll");
+  }
   hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("open");
+    if (mobileMenu.classList.contains("open")) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
   });
   mobileMenu.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => mobileMenu.classList.remove("open"))
+    a.addEventListener("click", () => closeMobileMenu())
   );
 
   /* ================================================================
@@ -560,6 +578,7 @@
     closeCart();
     closeSearch();
     closeAccount();
+    closeMobileMenu();
   }
 
   function openCart() {
