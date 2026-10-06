@@ -13,12 +13,14 @@
   function openMobileMenu() {
     closeAllPanels();
     mobileMenu.classList.add("open");
+    mobileMenu.setAttribute("aria-hidden", "false");
     hamburger.setAttribute("aria-expanded", "true");
     hamburger.setAttribute("aria-label", "Fechar menu");
     document.body.classList.add("no-scroll");
   }
   function closeMobileMenu() {
     mobileMenu.classList.remove("open");
+    mobileMenu.setAttribute("aria-hidden", "true");
     hamburger.setAttribute("aria-expanded", "false");
     hamburger.setAttribute("aria-label", "Abrir menu");
     document.body.classList.remove("no-scroll");
@@ -33,6 +35,10 @@
   mobileMenu.querySelectorAll("a").forEach((a) =>
     a.addEventListener("click", () => closeMobileMenu())
   );
+  // Se a tela crescer até o desktop com o menu aberto, fecha e libera a rolagem
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1220) closeMobileMenu();
+  });
 
   /* ================================================================
      DADOS: perguntas, perfis, famílias e notas

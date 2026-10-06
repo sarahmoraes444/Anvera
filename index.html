@@ -61,7 +61,10 @@
         </button>
       </div>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
+  </header>
+
+  <!-- Menu mobile: fica FORA do header, pois o backdrop-filter do header cria um containing block e quebra o position:fixed -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
       <a href="#inicio">Início</a>
       <a href="#descubra">Descubra sua essência</a>
       <a href="#como-funciona">Como funciona</a>
@@ -73,7 +76,6 @@
         conosco</a>
       <a href="#descubra" class="btn btn-primary btn-block">Descobrir minha essência</a>
     </div>
-  </header>
 
   <main>
 
